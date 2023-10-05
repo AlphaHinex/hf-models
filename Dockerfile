@@ -1,3 +1,7 @@
-FROM alpine
+FROM python:3-alpine
 
-COPY . /hf-models
+RUN pip install huggingface_hub
+RUN huggingface-cli login --token $HUGGINGFACE_TOKEN
+
+COPY download.py .
+RUN python download.py
