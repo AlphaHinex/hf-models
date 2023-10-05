@@ -33,6 +33,7 @@ jobs:
     - name: Build the Docker image
       env:
         HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        HUGGINGFACE_HUB_CACHE: /home/runner/work/hf-models/hf-models
       run: docker build . --file Dockerfile --tag $IMAGE_NAME
       
   push_to_registry:
