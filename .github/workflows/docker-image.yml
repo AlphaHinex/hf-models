@@ -22,7 +22,7 @@ jobs:
     - name: Build the Docker image
       run: |
         git lfs install
-        git clone https://alphahinex:${{ secrets.HF_TOKEN }}@huggingface.co/bigcode/starcoderbase-1b
+        git clone https://alphahinex:${{ secrets.HF_TOKEN }}@huggingface.co/bigcode/starcoderbase-3b
         docker build . --file Dockerfile --tag $IMAGE_NAME
       
   push_to_registry:
