@@ -31,6 +31,8 @@ jobs:
         df -h
     - uses: actions/checkout@v3
     - name: Build the Docker image
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
       run: docker build . --file Dockerfile --tag $IMAGE_NAME
       
   push_to_registry:
