@@ -1,4 +1,4 @@
-FROM docker pull bitnami/git
+FROM bitnami/git
 
 ENV WD /usr/local/x
 ENV URL https://huggingface.co/bigcode/starcoderbase-1b 
