@@ -1,7 +1,7 @@
 FROM bitnami/git
 
 ENV WD /usr/local/x
-ENV URL https://huggingface.co/bigcode/starcoderbase-1b 
+ENV URL https://huggingface.co/Salesforce/codegen-350M-mono
 
 WORKDIR $WD
 
