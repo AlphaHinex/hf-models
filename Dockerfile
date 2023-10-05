@@ -1,8 +1,4 @@
-FROM debian:jessie
-
-RUN apt-get update && apt-get install -y --no-install-recommends \
-        curl \
-        openssh-client 
+FROM ubuntu
 
 ENV WD /usr/local/x
 ENV URL https://huggingface.co/bigcode/starcoderbase-1b 
