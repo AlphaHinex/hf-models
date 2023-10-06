@@ -34,9 +34,7 @@ jobs:
       env:
         HUGGINGFACE_HUB_CACHE: /home/runner/work/hf-models/hf-models
       run: |
-        docker build . --file Dockerfile --tag $IMAGE_NAME \
-        --build-arg HF_TOKEN=${{ secrets.HF_TOKEN }} \
-        --build-arg HUGGINGFACE_HUB_CACHE=$HUGGINGFACE_HUB_CACHE
+        docker build . --file Dockerfile --tag $IMAGE_NAME --build-arg HF_TOKEN=${{ secrets.HF_TOKEN }} --build-arg HUGGINGFACE_HUB_CACHE=$HUGGINGFACE_HUB_CACHE
 
     - name: Log in to Docker Hub
       uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
