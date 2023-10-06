@@ -8,3 +8,4 @@ RUN huggingface-cli login --token $HF_TOKEN
 
 COPY download.py .
 RUN python download.py
+RUN rm -f /root/.cache/huggingface/token
