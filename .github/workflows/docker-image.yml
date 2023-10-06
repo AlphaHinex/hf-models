@@ -9,7 +9,7 @@ on:
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
-  IMAGE_NAME: alphahinex/hf-models:main
+  IMAGE_NAME: alphahinex/hf-models:test
 
 jobs:
 
