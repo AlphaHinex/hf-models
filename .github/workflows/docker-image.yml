@@ -9,7 +9,7 @@ on:
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
-  IMAGE_NAME: alphahinex/hf-models:test
+  IMAGE_NAME: alphahinex/hf-models:starcoderbase-7b
 
 jobs:
 
@@ -21,7 +21,7 @@ jobs:
     - name: Maximize build space
       uses: easimon/maximize-build-space@master
       with:
-        root-reserve-mb: 20480
+        root-reserve-mb: 40960
         swap-size-mb: 1024
         remove-dotnet: 'true'
         remove-android: 'true'
