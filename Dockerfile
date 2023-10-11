@@ -1,5 +1,6 @@
 FROM python:3-alpine
 
+COPY TONEK_FILE TONEK_FILE
 RUN pip install huggingface_hub
 RUN huggingface-cli login --token | cat TONEK_FILE
 
