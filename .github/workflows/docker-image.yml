@@ -31,9 +31,13 @@ jobs:
         echo "Free space:"
         df -h
     - uses: actions/checkout@v3
+    - name: create TONEK_FILE
+      run: echo ${{ secrets.HF_TOKEN }} > TONEK_FILE
     - name: Build the Docker image
       run: |
-        docker build --build-arg HF_TOKEN=${{ secrets.HF_TOKEN }} . --file Dockerfile --tag $IMAGE_NAME
+        docker build . --file Dockerfile --tag $IMAGE_NAME
+    - name: clean TONEK_FILE
+      run: rm -f TONEK_FILE
 
     - name: Log in to Docker Hub
       uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
