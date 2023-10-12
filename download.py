@@ -4,6 +4,6 @@
 
 # Or an entire repository
 from huggingface_hub import snapshot_download
-snapshot_download("bigcode/starcoder", allow_patterns=["pytorch_model-00004-of-00007.bin", "pytorch_model-00005-of-00007.bin", "pytorch_model-00006-of-00007.bin"])
+snapshot_download("bigcode/starcoderbase-7b")
 
 # See more at https://huggingface.co/docs/huggingface_hub/en/guides/download
