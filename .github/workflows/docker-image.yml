@@ -36,6 +36,7 @@ jobs:
     - name: Build the Docker image
       run: |
         cat /etc/docker/daemon.json
+        ps -ef|grep dockerd
         docker build . --file Dockerfile --tag $IMAGE_NAME
     - name: clean TONEK_FILE
       run: rm -f TONEK_FILE
