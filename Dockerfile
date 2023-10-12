@@ -2,7 +2,6 @@ FROM python:3-alpine
 
 COPY TONEK_FILE TONEK_FILE
 RUN pip install huggingface_hub
-RUN pip install hf_transfer
 RUN huggingface-cli login --token | cat TONEK_FILE
 
 COPY download.py .
