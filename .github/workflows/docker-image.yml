@@ -35,6 +35,7 @@ jobs:
       run: echo ${{ secrets.HF_TOKEN }} > TONEK_FILE
     - name: Build the Docker image
       run: |
+        cat /etc/docker/daemon.json
         docker build . --file Dockerfile --tag $IMAGE_NAME
     - name: clean TONEK_FILE
       run: rm -f TONEK_FILE
