@@ -4,6 +4,6 @@
 
 # Or an entire repository
 from huggingface_hub import snapshot_download
-snapshot_download("bigcode/starcoderbase-1b")
+snapshot_download("bigcode/starcoderbase-3b")
 
 # See more at https://huggingface.co/docs/huggingface_hub/en/guides/download
