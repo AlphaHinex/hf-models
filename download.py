@@ -4,6 +4,6 @@
 
 # Or an entire repository
 from huggingface_hub import snapshot_download
-snapshot_download("bigcode/starcoderbase-7b")
+snapshot_download("Salesforce/codet5-small")
 
 # See more at https://huggingface.co/docs/huggingface_hub/en/guides/download
