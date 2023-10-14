@@ -9,7 +9,7 @@ on:
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
-  IMAGE_NAME: alphahinex/hf-models:starcoderbase-3b
+  IMAGE_NAME: alphahinex/hf-models:codegen25-7b-mono
 
 jobs:
 
