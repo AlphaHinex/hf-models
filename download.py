@@ -4,6 +4,6 @@
 
 # Or an entire repository
 from huggingface_hub import snapshot_download
-snapshot_download("Salesforce/codegen25-7b-mono")
+snapshot_download("defog/sqlcoder2")
 
 # See more at https://huggingface.co/docs/huggingface_hub/en/guides/download
