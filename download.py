@@ -3,10 +3,12 @@
 # hf_hub_download(repo_id="tiiuae/falcon-7b-instruct", filename="config.json")
 
 # Or an entire repository
-from huggingface_hub import snapshot_download
+# from huggingface_hub import snapshot_download
 # snapshot_download("defog/sqlcoder")
 
 # Download from a dataset
-snapshot_download(repo_id="bigcode/starcoderdata", repo_type="dataset", allow_patterns=["git-commits-cleaned/train-00000-of-00055.parquet", "github-issues-filtered-structured/train-00000-of-00059.parquet"])
+from huggingface_hub import snapshot_download
+# snapshot_download(repo_id="bigcode/starcoderdata", repo_type="dataset", allow_patterns=["git-commits-cleaned/train-00000-of-00055.parquet", "github-issues-filtered-structured/train-00000-of-00059.parquet"])
+snapshot_download(repo_id="OpenAssistant/oasst1", repo_type="dataset")
 
 # See more at https://huggingface.co/docs/huggingface_hub/en/guides/download
